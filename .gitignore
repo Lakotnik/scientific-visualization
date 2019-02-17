@@ -1,6 +1,9 @@
 # User added
 smoke
 
+# Ignore this directory or building smoke is going to be a shitshow
+/fftw-2.1.5/
+
 # Prerequisites
 *.d
 
