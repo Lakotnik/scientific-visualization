@@ -38,7 +38,7 @@ int Simulation::clamp(float x)
 { return ((x)>=0.0?((int)(x)):(-((int)(1-(x))))); }
 
 float Simulation::max(float x, float y)
-{ return x > y ? x : y; }
+{ return x > y ? x : y; } // fixed max function to actualy be a max not min function
 
 //solve: Solve (compute) one step of the fluid flow simulation
 void Simulation::solve(int n, fftw_real* vx, fftw_real* vy, fftw_real* vx0, fftw_real* vy0, fftw_real visc, fftw_real dt)
