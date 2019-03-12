@@ -5,7 +5,12 @@
 #include <rfftw.h>              //the numerical simulation FFTW library
 #include <stdio.h>              //for printing the help text
 #include <math.h>               //for various math functions
-#include <GL/glut.h>            //the GLUT graphics library
+#ifdef __APPLE__
+#include <GLUT/glut.h>          // If we are on apple, include this library
+#else
+#include <GL/glut.h>            // If we are on UNIX/Windows, import this
+#endif
+
 
 
 

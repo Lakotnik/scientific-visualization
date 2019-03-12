@@ -43,7 +43,7 @@
 #define HAVE_GETOPT_H 1
 
 /* Define if you have the <malloc.h> header file */
-#define HAVE_MALLOC_H 1
+/* #undef HAVE_MALLOC_H */
 
 /* Define if you have gethrtime() a la Solaris 2 */
 /* #undef HAVE_GETHRTIME */
@@ -87,7 +87,7 @@
 /* #undef FFTW_ENABLE_I386_HACKS */
 
 /* Define when using a version of gcc that aligns the stack properly */
-#define FFTW_GCC_ALIGNS_STACK 1
+/* #undef FFTW_GCC_ALIGNS_STACK */
 
 /* Define to enable extra runtime checks for debugging. */
 /* #undef FFTW_DEBUG */
